@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: #14131B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.title{
+    margin-top: 133px;
+    color: #817D92;
+    font-size: 24px;
+}
+.group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.top{
+    background: #24232C;
+    width: 540px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 19px 32px;
+    color: #E6E5EA;
+    font-size: 18px;
+}
+.top i{
+    color: #A4FFAF;
+}
+
+
+
+.bottom{
+    color: #E6E5EA;
+    width: 540px;
+    height: 528px;
+    padding: 24px 32px;
+    font-size: 18px;
+    display: flex;
+    margin-top: 24px;
+    background: #24232C;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+}
+.first{
+    display: flex;
+    width: 540px;
+    justify-content: space-between;
+    align-items: center;
+}
+.first h1{
+    font-size: 18px
+}
+.first h2{
+    color: #A4FFAF;
+    font-size: 32px;
+}
+.second{
+    display: flex;
+    align-items: center;
+    margin-top: 32px;
+}
+.rec1{
+    width: 260px;
+    height: 10px;
+    background: #A4FFAF;
+}
+.oval{
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: #E6E5EA;
+}
+.rec2{
+    width: 260px;
+    height: 10px;
+    background: #18171F;
+}
+.third{
+    font-size: 18px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 30px;  
+    margin-top: 20px;
+}
+
+.third-childs{
+    display: flex;
+    gap: 10px;
+}
+.third-childs span{
+    background-color: #A4FFAF;
+    
+}
+.third-childs i{
+    color: black;
+}
+.third-childs h1{
+    font-size: 18px;
+}
+.last i{
+    color: #E6E5EA;
+    width: 20px;
+    height: 20px;
+}
+.fourth{
+    display: flex;
+    background: #18171F;
+    width: 520px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 21px 23px;
+    margin-top: 20px;
+}
+.fourth h1{
+    color: #817D92;
+    font-size: 18px;
+}
+.med{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.med h2{
+    font-size: 24px;
+}
+.med span{
+    width: 10px;
+    height: 28px;
+    border: 1px solid white;
+    background-color: #F8CD65;
+}
+.fifth{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 32px;
+    width: 520px;
+    background: #A4FFAF;
+    padding: 20px;
+}
+.fifth h1{
+    color: #24232C;
+    font-size: 18px;
+    margin-right: 5px;
+}
+.fifth i{
+    color: #24232C;
+}

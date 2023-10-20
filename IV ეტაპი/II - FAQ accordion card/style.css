@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans';
+}
+body{
+    background: linear-gradient(180deg, #B068E9 0%, #6463E7 100%);
+    height: 100vh;
+    width: 100%;
+}
+h1{
+    color: #1E1F36;
+    font-size: 32px;
+    font-weight: 700;
+}
+h2{
+    color: #4B4C5F;
+    font-size: 13px;
+    font-weight: 400;
+}
+.container{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    box-shadow: 0px 50px 50px -20px rgba(53.33, 17.63, 121.91, 0.50);
+    border-radius: 23px;
+    margin: 145px 24px 85px 24px;
+}
+.images{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -110px;
+}
+.down-image{
+    position: relative;
+    top: -70px;
+}
+.text{
+    position: relative;
+    top: -100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 38px;
+    padding-left: 24px;
+    padding-right: 24px;
+    width: 100%;
+}
+.accordions{
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    text-align: left;
+    width: 100%;
+}
+.accordion{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(232, 232, 234, 1);
+    padding-bottom: 18px;
+}
+.question-answer{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+.question{
+    color: #1E1F36;
+}
+.answer{
+    display: none;
+}
+
+
+
+@media(min-width: 1440px){
+    .container{
+        flex-direction: row;
+        justify-content: space-between;
+        width: 920px;
+        gap: 87px;
+        margin: auto;
+        margin-top: 150px;
+        align-items: center;
+        padding-top: 50px;
+    }
+    .images{
+        top: 0;
+        left: -50px;
+    }
+    .text{
+        top: 0;
+    }
+    .images{
+        width: 470px;
+        height: 277px;
+    }
+    .accordions{
+        width: 60%;
+        align-self: flex-start;
+    }
+    .text{
+        text-align: left;
+    }
+    h1{
+        align-self: flex-start;
+    }
+
+}
+

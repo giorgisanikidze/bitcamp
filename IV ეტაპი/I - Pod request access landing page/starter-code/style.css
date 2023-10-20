@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Chivo';
+    box-sizing: border-box;
+}
+:root{
+    --Aquamarine : #54E6AF;
+    --Charcoal : #2C344B;
+    --White : #FFFFFF;
+    --black : #121725;
+    --Light-Gray : #5A668A;
+    --Pastel-Blue : #C2CBE5;
+}
+
+
+h1{
+    position: relative;
+    max-width: 330px;
+    z-index: 1;
+    color: var(--Aquamarine);
+    font-size: 26px;
+    font-family: Chivo;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 38px;
+}
+p{
+    position: relative;
+    max-width: 330px;
+    text-align: center;
+    z-index: 1;
+    color: var(--Pastel-Blue);
+    font-size: 15px;
+    font-family: Chivo;
+    font-weight: 400;
+    line-height: 25px;
+}
+span{
+    color: white;
+}
+.logo {
+    position: relative;
+    z-index: 1;
+}
+.info {
+    position: relative;
+    z-index: 1;
+}
+
+
+
+
+.container{
+    background: url('./assets/desktop/image-host.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 60px 0 10px 0;
+    text-align: center;
+    height: 100vh;
+}
+.container::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(18, 23, 37, 0.9);
+}
+.middle{
+    display: flex;
+    flex-direction: column;
+    margin: 57px 24px 90px 24px;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 36px;
+    align-self: center;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+.socials{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 330px;
+    align-self: center;
+}
+.spotify{
+    width: 56px;
+    height: 17px;
+}
+.apple-podcast{
+    width: 45px;
+    height: 17px;
+}
+.google-podcasts{
+    width: 73px;
+    height: 11px;
+}
+.pocket-casts{
+    width: 77px;
+    height: 15px;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 330px;
+    align-self: center;
+}
+
+.input div input{
+    height: 46px;
+    background: #2C344B;
+    border-radius: 28px;
+    border: none;
+    padding-left: 32px;
+    color: white;
+    width: 100%;
+}
+.input div h4{
+    display: none;
+    color: #FB3E3E;
+    font-size: 12px;
+}
+.input button{
+    padding: 9px 0;
+    height: 46px;
+    text-align: center;
+    background-color: var(--Aquamarine);
+    border: none;
+    border-radius: 28px;
+    color: var(--black);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+.dots{
+    display: none;
+}
+
+
+
+@media(min-width: 700px) {
+    h1{
+        font-size: 48px;
+        line-height: 56px;
+        max-width: 635px;
+    }
+    p{
+        font-size: 18px;
+        line-height: 28px;
+        width: 450px;
+        text-align: left;
+    }
+
+    .container{
+        height: 100%;
+        padding-left: 30px;
+        padding-bottom: 0;
+        background-color: rgb(18, 23, 37);
+        text-align: left;
+        background-size: 60% 767px;
+        background-position-x: right;
+        background-position-y: top;
+    }
+    .container::before{
+        display: none;
+    }
+    .logo {
+        padding-left: 9px;
+    }
+    .middle{
+        width: 635px;
+        margin-left: 9;
+        background: var(--black);
+        padding-top: 93px;
+        margin-top: 100px;
+        padding-bottom: 20px;
+        gap: 40px;
+    }
+    .text{
+        gap: 31px;
+        align-self: self-start;
+    }
+
+    .input{
+        width: 70%;
+        align-self: auto;
+    }
+    .input div h4{
+        display: none;
+    }
+    .info{
+        flex-direction: column-reverse;
+        position: relative;
+        gap: 64px;
+        align-self: auto;
+        width: 635px;
+    }
+    .info button{
+        position: absolute;
+        top: 0;
+        right: 30%;
+        box-shadow: 0px 25px 20px -20px rgba(84, 230, 175, 0.50);
+        padding: 9px 27px;
+    }
+    .socials{
+        width: 500px;
+        align-self: auto;
+    }
+    .spotify {
+        width: 96px;
+        height: 29px;
+    }
+    .apple-podcast {
+        width: 78px;
+        height: 29px;
+    }
+    .google-podcasts {
+        width: 125pxpx;
+        height: 18px;
+    }
+    .pocket-casts {
+        width: 129pxpx;
+        height: 26px;
+    }
+    .dots{
+        display: block;
+        margin-top: 150px; 
+    }
+}
+
+
+
+
+
+
+
+
+@media(min-width: 1440px) {
+    .container{
+        padding-left: 165px;
+        height: 100%;
+    }
+    h1 {
+        font-size: 52px;
+        line-height: 62px;
+        max-width: 700px;
+    }
+    .middle{
+        width: 732px;
+        padding-bottom: 150px;
+        margin-bottom: 0;
+    }
+    .dots{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+}

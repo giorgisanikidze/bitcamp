@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="container">
+    <img class="logo" src="./images/logo.svg" alt="">
+    <div class="tip">
+      <div class="tip-choose">
+        <div>
+          <h2>Bill</h2>
+          <div class="money-input">
+            <img src="./images/icon-dollar.svg" alt="">
+            <input id="pay" value="0" type="number" placeholder="0">
+          </div>
+        </div>
+        
+        <div class="select-tip">
+          <h2>Select Tip %</h2>
+          <div class="percents">
+            <div class="percent percent-5">5%</div>
+            <div class="percent percent-10">10%</div>
+            <div class="percent percent-15">15%</div>
+            <div class="percent percent-25">25%</div>
+            <div class="percent percent-50">50%</div>
+            <input class="custom percent-custom" placeholder="Custom" type="number">
+          </div>
+        </div>
+
+        <div class="people-number">
+          <h2>Number of People</h2>
+          <div class="people-input">
+            <img src="./images/icon-person.svg" alt="">
+            <input id="people" value="0" type="number" placeholder="0">
+          </div>
+        </div>
+      </div>
+
+
+      <div class="tip-amounts">
+        <div class="tip-calculator">
+          <div class="tip-amount tip-person">
+            <div class="text">
+              <h2 style="color: white;">Tip Amount</h2>
+              <h2 style="color: #7F9D9F; font-size: 13px;">/ person</h2>
+            </div>
+            <span class="amount-tip">$0.00</span>
+          </div>
+
+          <div class="tip-amount total-person">
+            <div class="text">
+              <h2 style="color: white;">Total</h2>
+              <h2 style="color: #7F9D9F; font-size: 13px;">/ person</h2>
+            </div>
+            <span class="amount-total">$0.00</span>
+          </div>
+        </div>
+        <button class="reset" type="reset">RESET</button>
+        
+
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+  <script src="main.js"></script>
+
+</body>
+</html>

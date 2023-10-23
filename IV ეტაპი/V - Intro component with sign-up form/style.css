@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins';
+    box-sizing: border-box;
+}
+h1{
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 36px;
+}
+h2{
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 26px;
+}
+h3{
+    color: #BAB7D4;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 21px;
+}
+p{
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+}
+.try{
+    font-weight: 700;
+    letter-spacing: 0.27px;
+}
+.terms{
+    color: #FF7979;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 21px;
+}
+.fname-label, .lname-label, .email-label, .password-label{
+    display: none;
+    justify-content: end;
+    color: #FF7979;
+    font-size: 11px;
+    font-style: italic;
+    font-weight: 500;
+}
+
+
+
+
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: url(./images/bg-intro-mobile.png) center center;
+    background-size: cover;
+    text-align: center;
+    padding: 88px 24px;
+    z-index: 2;
+}
+.container::before{
+    content: '';
+    position: absolute;
+    background: rgba(255, 121, 121, 1);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+
+
+
+
+
+.text{
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+
+
+
+
+
+.signup{
+    z-index: 1;
+    margin-top: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+}
+.info{
+    padding: 18px 66px;
+    background: #5E54A4;
+    box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+.forms{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+    background: white;
+    box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 16px;
+}
+form input{
+    border-radius: 5px;
+    border: 1px solid #DEDEDE;
+    width: 100%;
+    color: #3D3B48;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0.25px;
+    padding: 15px 19px 15px 19px;
+}
+.fname div, .lname div, .email, .password{
+    position: relative;
+
+}
+
+.fname-img, .lname-img, .email-img, .password-img{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    display: none;
+}
+
+
+
+
+
+#button{
+    background: #38CC8B;
+    box-shadow: 0px -4px 0px rgba(0, 0, 0, 0.09) inset;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1440px){
+    h1{
+        align-self: flex-start;
+        font-size: 50px;
+        line-height: 55px;
+    }
+
+    .container{
+        flex-direction: row;
+        padding-left: 165px;
+        padding-right: 165px;
+        gap: 45px;
+    }
+    .text{
+        width: 50%;
+        text-align: left;
+        gap: 11px;
+    }
+    .signup{
+        width: 50%;
+    }
+    .forms{
+        padding: 40px;
+    }
+}

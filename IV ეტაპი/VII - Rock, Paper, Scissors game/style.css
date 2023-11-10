@@ -1,0 +1,257 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    background: radial-gradient(37.22% 37.22% at 29.64% 18.61%, #1F3757 0%, #131537 100%);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 32px 52px 32px;
+    justify-content: space-between;
+    align-items: center;
+}
+.head{
+    display: flex;
+    width: 100%;
+    max-width: 700px;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid rgba(255, 255, 255, 0.29);
+}
+
+.logo{
+    padding: 24px;
+}
+.logo img{
+    width: 83px;
+    height: 48px;
+}
+
+.score-box{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 24px;
+    margin: 12px;
+    background: linear-gradient(0deg, #F3F3F3 0%, white 100%);
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.20);
+    border-radius: 4px;
+    align-items: center;
+}
+.score-box h3{
+    color: #2A45C2;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1.56px;
+    word-wrap: break-word;
+}
+.score-number{
+    color: #565468;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 40px;
+    word-wrap: break-word;
+}
+
+
+
+
+
+
+.middle{
+    margin-top: 105px;
+}
+.choose{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.triangle{
+    display: flex;
+    justify-content: center;
+}
+.triangle-img{
+    margin-top: 50px;
+}
+
+
+.rock-img, .paper-img, .scissors-img{
+    position: absolute;
+    padding: 20px;
+    border-radius: 50%;
+    background-color: white;
+
+}
+.rock-img{
+    border: 15px solid #DB2E4D;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.paper-img{
+    border: 15px solid rgba(70, 100, 244, 1);
+    top: 0;
+    left: 0;
+}
+.scissors-img{
+    border: 15px solid rgba(235, 159, 14, 1);
+    top: 0;
+    right: 0;
+}
+
+
+.button{
+    width: 150px;
+    align-self: center;
+    margin-top: 130px;
+    border-radius: 8px;
+    border: 1px white solid;
+    background: transparent;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 2.50px;
+    padding: 11px 36px;
+}
+
+.rps{
+    position: relative;
+}
+.rps-select{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.rps-battle{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+.rps-battle h2{
+    color: white;
+    font-size: 15px;
+    font-family: Barlow Semi Condensed;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 1.88px;
+    word-wrap: break-word;
+}
+.my-choice img{
+    border: 15px solid rgba(70, 100, 244, 1);
+    padding: 20px;
+    border-radius: 50%;
+    background-color: white;
+}
+.opponent-choice img{
+    border: 15px solid rgba(70, 100, 244, 1);
+    padding: 20px;
+    border-radius: 50%;
+    background-color: white;
+}
+.opponent-choice, .my-choice{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+
+
+
+.winner{
+    margin-top: 62px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+.winner-text{
+    color: white;
+    font-size: 56px;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+.play-again{
+    padding: 12px 60px;
+    background: linear-gradient(0deg, #F3F3F3 0%, white 100%);
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.20);
+    border-radius: 8px;
+    color: #3B4262;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 2.50px;
+}
+
+
+
+
+
+.rules{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1440px){
+    .triangle-img{
+        transform: scale(1.3);
+        margin-top: 100px;
+    }
+    .middle{
+        margin-top: 400px;
+    }
+    .paper-img{
+        left: -70px;
+        padding: 30px;
+        border: 20px solid rgba(70, 100, 244, 1);;
+    }
+    .scissors-img{
+        right: -70px;
+        padding: 30px;
+        border: 20px solid rgba(235, 159, 14, 1);;
+    }
+    .rock-img{
+        bottom: -70px;
+        padding: 30px;
+        border: 20px solid #DB2E4D;;
+    }
+    .rps-select{
+        gap: 50px;
+    }
+    .rps-battle{
+        gap: 100px;
+    }
+    .winner{
+        gap: 25px;
+    }
+    .winner-text{
+        font-size: 70px;
+    }
+    .play-again{
+        padding: 30px 90px;
+        font-size: 22px;
+    }
+    .button{
+        align-self: flex-end;
+    }
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+</head>
+<body>
+
+
+  <div class="rules" style="display: none;">
+    <h2>RULES</h2>
+    <img src="./images/image-rules.svg" alt="">
+    <img class="close" src="./images/icon-close.svg" alt="">
+  </div>
+
+  <div class="container">
+    <div class="head">
+      <div class="logo">
+        <img src="./images/logo.svg" alt="">
+      </div> 
+      <div class="score-box">
+        <h3>score</h3>
+        <span class="score-number">0</span>
+      </div>
+    </div>
+
+    <div class="middle">
+      <div class="rps">
+        <div class="triangle">
+          <img class="triangle-img" src="./images/bg-triangle.svg" alt="">
+        </div>
+        <img class="paper-img" src="./images/icon-paper.svg" alt="">
+        <img class="scissors-img" src="./images/icon-scissors.svg" alt="">
+        <img class="rock-img" src="./images/icon-rock.svg" alt="">
+
+      </div>
+
+
+      <div class="rps-select" style="display: none;">
+        <div class="rps-battle">
+          <div class="my-choice">
+            <img src="./images/icon-paper.svg" alt="">
+            <h2>YOU PICKED</h2>
+          </div>
+          
+          <div class="opponent-choice">
+            <img src="./images/icon-rock.svg" alt="">
+            <h2>THE HOUSE PICKED</h2>
+          </div>
+        </div>
+        
+        
+        <div class="winner" style="display: none;">
+          <h2 class="winner-text"></h2>
+          <button class="play-again" type="button">Play Again</button>
+        </div>
+      </div>
+    </div>
+
+    <button class="button" type="button">Rules</button>
+  </div>
+
+
+
+
+
+
+
+
+
+
+<script src="main.js"></script>
+</body>
+</html>

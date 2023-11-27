@@ -82,9 +82,22 @@ function peopleInputFunction(){
 
 function calculator(){
     console.log()
-    if(Number(billValue) > 0 && Number(peopleValue) > 0 && Number(tipAmount) > 0){
-        tipPerPerson.innerHTML = "$" + Math.round((billValue * (tipAmount/100) / peopleValue) *100)/100;
+    if (Number(billValue) > 0 && Number(peopleValue) > 0 && Number(tipAmount) > 0) {
+        let tipPerPersonNumber = Math.round((billValue * (tipAmount / 100) / peopleValue) * 100) / 100;
+        let totalPerPersonNumber = Math.round(((Number((billValue * (tipAmount / 100))) + Number(billValue)) / peopleValue) * 100) / 100;
+        if (tipPerPersonNumber.toString().length > 10) {
+            console.log(totalPerPersonNumber.length)
+            tipPerPerson.innerHTML = "$" + tipPerPersonNumber.toExponential(2);   
+        } else {
+            tipPerPerson.innerHTML = "$" + Math.round((billValue * (tipAmount / 100) / peopleValue) * 100) / 100;
+            
+        }
+        if (totalPerPersonNumber.toString().length > 10) {
+            totalPerPerson.innerHTML = "$" + totalPerPersonNumber.toExponential(2)
+        } else {
         totalPerPerson.innerHTML = "$" + Math.round(((Number((billValue * (tipAmount / 100))) + Number(billValue)) / peopleValue) * 100) / 100 ;
+            
+        }
 
 }
 

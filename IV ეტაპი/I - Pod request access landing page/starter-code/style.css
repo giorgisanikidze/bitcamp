@@ -202,6 +202,7 @@ span{
     }
     .input div h4{
         display: none;
+        padding: 10px 0 0 32px;
     }
     .info{
         flex-direction: column-reverse;

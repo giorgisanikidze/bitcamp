@@ -37,6 +37,9 @@ h2{
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     margin-top: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .tip-choose{
     display: flex;
@@ -211,6 +214,7 @@ button{
         width: 920px;
         gap: 100px;
         border-radius: 28px;
+        max-width: none;
     }
     .tip-choose{
         gap: 40px;

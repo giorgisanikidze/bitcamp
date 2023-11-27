@@ -29,6 +29,7 @@ p{
     font-size: 16px;
     font-weight: 500;
     line-height: 26px;
+    max-width: 700px;
 }
 .try{
     font-weight: 700;
@@ -57,13 +58,14 @@ p{
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    background: url(./images/bg-intro-mobile.png) center center;
+    background-image: url(./images/bg-intro-desktop.png);
     background-size: cover;
     text-align: center;
     padding: 88px 24px;
+    background-color: rgba(255, 121, 121, 1);
     z-index: 2;
 }
-.container::before{
+/* .container::before{
     content: '';
     position: absolute;
     background: rgba(255, 121, 121, 1);
@@ -73,7 +75,7 @@ p{
     left: 0;
     bottom: 0;
     right: 0;
-}
+} */
 
 
 
@@ -184,6 +186,7 @@ form input{
         padding-left: 165px;
         padding-right: 165px;
         gap: 45px;
+        height: 100vh;
     }
     .text{
         width: 50%;
@@ -192,6 +195,7 @@ form input{
     }
     .signup{
         width: 50%;
+        margin-top: 0;
     }
     .forms{
         padding: 40px;

@@ -3,8 +3,20 @@
     padding: 0;
     box-sizing: border-box;
 }
+.mobile-light{
+    background-image: url(./images/bg-mobile-light.jpg);
+}
+.mobile-dark{
+    background-image: url(./images/bg-mobile-dark.jpg);
+}
+.desktop-light{
+    background-image: url(./images/bg-desktop-light.jpg);
+}
+.desktop-dark{
+    background-image: url(./images/bg-desktop-dark.jpg);
+}
+
 .head{
-    background: url(images/bg-mobile-light.jpg);
     background-size: cover;
     width: 100%;
     height: 35%;
@@ -64,11 +76,6 @@
     outline: none;
 }
 
-
-
-
-
-
 .task-show{
     width: 100%;
     margin-top: 16px;
@@ -80,9 +87,8 @@
     justify-content: space-between;
     gap: 30px;
     height: 440px;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
-
 .task-list{
     display: flex;
     flex-direction: column;
@@ -96,8 +102,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
-
 .checkboxChild {
     width: 100%;
     height: 100%;
@@ -108,7 +114,6 @@
     background: linear-gradient(to right, rgba(85, 221, 255, 1), rgba(192, 88, 243, 1));
 }
 
-
 .item{
    display: flex;
    align-items: center;
@@ -116,8 +121,6 @@
    border-bottom: 1px solid #E3E4F1;
    padding-bottom: 20px;
 }
-
-
 
 .item svg:hover, .item span:hover{
     cursor: pointer;
@@ -129,10 +132,6 @@
     justify-content: space-between;
 }
 
-
-
-
-
 .filter{
     display: flex;
     width: 100%;
@@ -143,8 +142,9 @@
     border-radius: 5px;
     padding: 16px 20px 20px 16px;
 }
-
-
+.clear{
+    cursor: pointer;
+}
 
 
 

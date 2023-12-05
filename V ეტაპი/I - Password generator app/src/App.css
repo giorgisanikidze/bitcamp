@@ -143,6 +143,7 @@
 .strength-text{
     color: #817D92;
     font-size: 16px;
+    align-self: center;
 }
 .boxes{
     display: flex;
@@ -157,7 +158,7 @@
 .strength-show{
     display: flex;
     gap: 16px;
-    min-height: 35px;
+    min-height: 32px;
 }
 .copy-svg{
     fill: #A4FFAF;
